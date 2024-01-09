@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div>
+    <h1>Account Dashboard</h1>
+    <form method="POST" action="{% url 'account' %}" class="text-center">
+        {% csrf_token %}
+        <button type="submit" name="edit_account">Edit Account</button>
+        <button type="submit" name="change_password">Change Password</button>
+    </form>
+</div>
+{% endblock content %}

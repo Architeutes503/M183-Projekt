@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% block content %}
+
+
+{% if user.is_superuser %}
+  <script>
+    window.location.href = "/admin/m183/post";
+  </script>
+{% else %}
+  <p>User Dashboard</p>
+{% endif %}
+
+
+
+{% endblock %}

@@ -40,3 +40,22 @@ class CustomAuthenticationForm(AuthenticationForm):
     class Meta:
         model = User
         fields = ["username", "password"]
+        
+        
+class UserUpdateForm(UserChangeForm):
+    class Meta:
+        model = User
+        fields = ["username"]
+        widgets = {
+            "username": forms.TextInput(attrs={"class": "custom-input"}),
+        }
+
+
+class PasswordUpdateForm(PasswordChangeForm):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields["old_password"].label = "Current Password"
+        self.fields["new_password1"].label = "New Password"
+        self.fields["new_password2"].label = "Confirm New Password"
+        for field_name in ["old_password", "new_password1", "new_password2"]:
+            self.fields[field_name].widget.attrs.update({"class": "custom-input"})

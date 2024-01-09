@@ -1,10 +1,10 @@
 {% extends "base.html" %} 
 {% block content %}
-<div class="container text-center">
+<div>
   <h2>Login</h2>
   <form method="post">
     {% csrf_token %} {{ form.as_p }}
-    <div class="button-container d-flex justify-content-center">
+    <div>
       <button type="submit">Login</button>
       <a href="{% url 'register' %}">Go to Register</a>
     </div>

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div>
+    <h1>Edit Username</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ user_form.username.errors }}
+        <br>
+        {{ user_form.username }}
+        <br>
+        <br>
+        <button type="submit" name="user_form_submit">Update Account</button>
+    </form>
+    <br>
+    <form method="POST" action="{% url 'account' %}">
+        {% csrf_token %}
+        <button type="submit" name="change_password">Change Password</button>
+    </form>
+</div>
+{% endblock content %}
