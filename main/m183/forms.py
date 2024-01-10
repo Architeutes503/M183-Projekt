@@ -65,6 +65,11 @@ class PasswordUpdateForm(PasswordChangeForm):
             
             
 class CommentForm(forms.ModelForm):
+    content = forms.CharField(
+        widget=forms.Textarea(attrs={'rows': 5, 'cols': 50, 'class': 'resizable-textarea'}),
+        max_length=200
+    )
+
     class Meta:
         model = Comment
-        fields = ['content']
+        fields = ["content"]

@@ -2,6 +2,8 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone
 from datetime import timedelta
+import uuid
+
 
 class Post(models.Model):
     STATUS_CHOICES = [
@@ -9,7 +11,7 @@ class Post(models.Model):
         ('published', 'Published'),
         ('deleted', 'Deleted'),
     ]
-
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     name = models.CharField(max_length=200)
     content = models.TextField()
     status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='hidden')
@@ -21,7 +23,7 @@ class Post(models.Model):
 
 
 class Comment(models.Model):
-    content = models.CharField(max_length=200)
+    content = models.TextField()
     post = models.ForeignKey(Post, on_delete=models.CASCADE)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)

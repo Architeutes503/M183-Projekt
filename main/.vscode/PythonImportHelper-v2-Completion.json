@@ -72,6 +72,38 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -86,6 +118,15 @@
         "importPath": "django.db.models.deletion",
         "description": "django.db.models.deletion",
         "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
         "documentation": {}
     },
     {
@@ -297,14 +338,6 @@
         "documentation": {}
     },
     {
-        "label": "user_passes_test",
-        "importPath": "django.contrib.auth.decorators",
-        "description": "django.contrib.auth.decorators",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.decorators",
-        "documentation": {}
-    },
-    {
         "label": "timezone",
         "importPath": "django.utils",
         "description": "django.utils",
@@ -318,6 +351,31 @@
         "description": "django.utils",
         "isExtraImport": true,
         "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "csrf_exempt",
+        "importPath": "django.views.decorators.csrf",
+        "description": "django.views.decorators.csrf",
+        "isExtraImport": true,
+        "detail": "django.views.decorators.csrf",
         "documentation": {}
     },
     {
@@ -454,6 +512,24 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "m183.migrations.0004_alter_comment_content",
+        "description": "m183.migrations.0004_alter_comment_content",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('m183', '0003_remove_loginattempt_user_loginattempt_username'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='comment',\n            name='content',\n            field=models.TextField(),\n        ),",
+        "detail": "m183.migrations.0004_alter_comment_content",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "m183.migrations.0005_alter_post_id",
+        "description": "m183.migrations.0005_alter_post_id",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('m183', '0004_alter_comment_content'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='post',\n            name='id',\n            field=models.UUIDField(default=uuid.uuid4, editable=False, primary_key=True, serialize=False),\n        ),",
+        "detail": "m183.migrations.0005_alter_post_id",
+        "documentation": {}
+    },
+    {
         "label": "has_group",
         "kind": 2,
         "importPath": "m183.templatetags.custom_filter",
@@ -485,7 +561,7 @@
         "kind": 2,
         "importPath": "m183.views.general",
         "description": "m183.views.general",
-        "peekOfCode": "def login_view(request):\n    try:\n        if request.method == \"POST\":\n            form = AuthenticationForm(request, data=request.POST)\n            username = request.POST.get('username')\n            if User.objects.filter(username=username).exists():\n                if LoginAttempt.has_exceeded_limit(username):\n                    messages.warning(request, \"You have exceeded the limit of login attempts. Please try again later.\")\n                    return redirect(\"home\")\n                if form.is_valid():",
+        "peekOfCode": "def login_view(request):\n    try:\n        if request.method == \"POST\":\n            form = AuthenticationForm(request, data=request.POST)\n            username = request.POST.get('username')\n            if User.objects.filter(username=username).exists():\n                if LoginAttempt.has_exceeded_limit(username):\n                    messages.warning(request, \"You have exceeded the limit of login attempts. Please try again later.\")\n                    logger.warning(\"User {} has exceeded the limit of login attempts.\".format(username))\n                    return redirect(\"home\")",
         "detail": "m183.views.general",
         "documentation": {}
     },
@@ -503,7 +579,7 @@
         "kind": 2,
         "importPath": "m183.views.general",
         "description": "m183.views.general",
-        "peekOfCode": "def password_change_view(request):\n    if request.method == \"POST\":\n        password_form = PasswordUpdateForm(request.user, request.POST)\n        if password_form.is_valid():\n            password_form.save()\n            update_session_auth_hash(request, password_form.user)\n            messages.success(request, \"Your password has been updated.\")\n            return redirect(\"account\")\n    else:\n        password_form = PasswordUpdateForm(request.user)",
+        "peekOfCode": "def password_change_view(request):\n    if request.method == \"POST\":\n        password_form = PasswordUpdateForm(request.user, request.POST)\n        if password_form.is_valid():\n            password_form.save()\n            update_session_auth_hash(request, password_form.user)\n            messages.success(request, \"Your password has been updated.\")\n            logger.info(\"User {} has successfully changed their password.\".format(request.user.username))\n            return redirect(\"account\")\n    else:",
         "detail": "m183.views.general",
         "documentation": {}
     },
@@ -512,8 +588,44 @@
         "kind": 2,
         "importPath": "m183.views.general",
         "description": "m183.views.general",
-        "peekOfCode": "def account_edit_view(request):\n    if request.method == \"POST\":\n        user_form = UserUpdateForm(request.POST, instance=request.user)\n        if user_form.is_valid():\n            user_form.save()\n            messages.success(request, \"Your account has been updated.\")\n            return redirect(\"account\")\n    else:\n        user_form = UserUpdateForm(instance=request.user)\n    context = {",
+        "peekOfCode": "def account_edit_view(request):\n    if request.method == \"POST\":\n        user_form = UserUpdateForm(request.POST, instance=request.user)\n        if user_form.is_valid():\n            user_form.save()\n            messages.success(request, \"Your account has been updated.\")\n            logger.info(\"User {} has successfully updated their account.\".format(request.user.username))\n            return redirect(\"account\")\n    else:\n        user_form = UserUpdateForm(instance=request.user)",
         "detail": "m183.views.general",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "m183.views.general",
+        "description": "m183.views.general",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nfrom..models import (\n    User,\n    LoginAttempt\n)\nfrom ..forms import (\n    CustomUserCreationForm,\n    UserUpdateForm,\n    PasswordUpdateForm\n)",
+        "detail": "m183.views.general",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "kind": 2,
+        "importPath": "m183.views.json_api",
+        "description": "m183.views.json_api",
+        "peekOfCode": "def api_view(request):\n    if request.method == 'GET':\n        api_key = request.GET.get('api_key')\n        if api_key == API_KEY:\n            posts = Post.objects.filter(status='published').values()\n            logger.info(\"API request: %s\" % posts)\n            return JsonResponse({'posts': list(posts)})\n        else:\n            logger.warning(\"Invalid API Key: %s\" % api_key)\n            return JsonResponse({'error': 'Invalid API Key'}, status=403)",
+        "detail": "m183.views.json_api",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "m183.views.json_api",
+        "description": "m183.views.json_api",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nAPI_KEY = '1234567890'\n@csrf_exempt\ndef api_view(request):\n    if request.method == 'GET':\n        api_key = request.GET.get('api_key')\n        if api_key == API_KEY:\n            posts = Post.objects.filter(status='published').values()\n            logger.info(\"API request: %s\" % posts)\n            return JsonResponse({'posts': list(posts)})",
+        "detail": "m183.views.json_api",
+        "documentation": {}
+    },
+    {
+        "label": "API_KEY",
+        "kind": 5,
+        "importPath": "m183.views.json_api",
+        "description": "m183.views.json_api",
+        "peekOfCode": "API_KEY = '1234567890'\n@csrf_exempt\ndef api_view(request):\n    if request.method == 'GET':\n        api_key = request.GET.get('api_key')\n        if api_key == API_KEY:\n            posts = Post.objects.filter(status='published').values()\n            logger.info(\"API request: %s\" % posts)\n            return JsonResponse({'posts': list(posts)})\n        else:",
+        "detail": "m183.views.json_api",
         "documentation": {}
     },
     {
@@ -521,7 +633,7 @@
         "kind": 2,
         "importPath": "m183.views.posts",
         "description": "m183.views.posts",
-        "peekOfCode": "def home(request):\n    posts = Post.objects.filter(status='published')\n    return render(request, 'home.html', {'posts': posts})\n@login_required\ndef dashboard(request):\n    user_posts = Post.objects.filter(author=request.user)\n    return render(request, 'posts/dashboard.html', {'user_posts': user_posts})\ndef post_detail(request, post_id):\n    post = get_object_or_404(Post, id=post_id)\n    if request.method == 'POST':",
+        "peekOfCode": "def home(request):\n    posts = Post.objects.filter(status='published')\n    return render(request, 'home.html', {'posts': posts})\n@login_required\ndef dashboard(request):\n    user_posts = Post.objects.filter(author=request.user).exclude(status='deleted')\n    return render(request, 'posts/dashboard.html', {'user_posts': user_posts})\ndef post_detail(request, post_id):\n    post = get_object_or_404(Post, id=post_id)\n    statuses = ['published', 'hidden', 'deleted']",
         "detail": "m183.views.posts",
         "documentation": {}
     },
@@ -530,7 +642,7 @@
         "kind": 2,
         "importPath": "m183.views.posts",
         "description": "m183.views.posts",
-        "peekOfCode": "def dashboard(request):\n    user_posts = Post.objects.filter(author=request.user)\n    return render(request, 'posts/dashboard.html', {'user_posts': user_posts})\ndef post_detail(request, post_id):\n    post = get_object_or_404(Post, id=post_id)\n    if request.method == 'POST':\n        if not request.user.is_authenticated:\n            return redirect('login')\n        form = CommentForm(request.POST)\n        if form.is_valid():",
+        "peekOfCode": "def dashboard(request):\n    user_posts = Post.objects.filter(author=request.user).exclude(status='deleted')\n    return render(request, 'posts/dashboard.html', {'user_posts': user_posts})\ndef post_detail(request, post_id):\n    post = get_object_or_404(Post, id=post_id)\n    statuses = ['published', 'hidden', 'deleted']\n    if request.method == 'POST':\n        if not request.user.is_authenticated:\n            logger.warning('User not authenticated: %s' % request.user)\n            return redirect('login')",
         "detail": "m183.views.posts",
         "documentation": {}
     },
@@ -539,7 +651,16 @@
         "kind": 2,
         "importPath": "m183.views.posts",
         "description": "m183.views.posts",
-        "peekOfCode": "def post_detail(request, post_id):\n    post = get_object_or_404(Post, id=post_id)\n    if request.method == 'POST':\n        if not request.user.is_authenticated:\n            return redirect('login')\n        form = CommentForm(request.POST)\n        if form.is_valid():\n            comment = form.save(commit=False)\n            comment.post = post\n            comment.author = request.user",
+        "peekOfCode": "def post_detail(request, post_id):\n    post = get_object_or_404(Post, id=post_id)\n    statuses = ['published', 'hidden', 'deleted']\n    if request.method == 'POST':\n        if not request.user.is_authenticated:\n            logger.warning('User not authenticated: %s' % request.user)\n            return redirect('login')\n        form = CommentForm(request.POST)\n        if form.is_valid():\n            comment = form.save(commit=False)",
+        "detail": "m183.views.posts",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "m183.views.posts",
+        "description": "m183.views.posts",
+        "peekOfCode": "logger = logging.getLogger(__name__)\ndef home(request):\n    posts = Post.objects.filter(status='published')\n    return render(request, 'home.html', {'posts': posts})\n@login_required\ndef dashboard(request):\n    user_posts = Post.objects.filter(author=request.user).exclude(status='deleted')\n    return render(request, 'posts/dashboard.html', {'user_posts': user_posts})\ndef post_detail(request, post_id):\n    post = get_object_or_404(Post, id=post_id)",
         "detail": "m183.views.posts",
         "documentation": {}
     },
@@ -584,7 +705,7 @@
         "kind": 6,
         "importPath": "m183.forms",
         "description": "m183.forms",
-        "peekOfCode": "class PasswordUpdateForm(PasswordChangeForm):\n    def __init__(self, *args, **kwargs):\n        super().__init__(*args, **kwargs)\n        self.fields[\"old_password\"].label = \"Current Password\"\n        self.fields[\"new_password1\"].label = \"New Password\"\n        self.fields[\"new_password2\"].label = \"Confirm New Password\"\n        for field_name in [\"old_password\", \"new_password1\", \"new_password2\"]:\n            self.fields[field_name].widget.attrs.update({\"class\": \"custom-input\"})\nclass CommentForm(forms.ModelForm):\n    class Meta:",
+        "peekOfCode": "class PasswordUpdateForm(PasswordChangeForm):\n    def __init__(self, *args, **kwargs):\n        super().__init__(*args, **kwargs)\n        self.fields[\"old_password\"].label = \"Current Password\"\n        self.fields[\"new_password1\"].label = \"New Password\"\n        self.fields[\"new_password2\"].label = \"Confirm New Password\"\n        for field_name in [\"old_password\", \"new_password1\", \"new_password2\"]:\n            self.fields[field_name].widget.attrs.update({\"class\": \"custom-input\"})\nclass CommentForm(forms.ModelForm):\n    content = forms.CharField(",
         "detail": "m183.forms",
         "documentation": {}
     },
@@ -593,7 +714,7 @@
         "kind": 6,
         "importPath": "m183.forms",
         "description": "m183.forms",
-        "peekOfCode": "class CommentForm(forms.ModelForm):\n    class Meta:\n        model = Comment\n        fields = ['content']",
+        "peekOfCode": "class CommentForm(forms.ModelForm):\n    content = forms.CharField(\n        widget=forms.Textarea(attrs={'rows': 5, 'cols': 50, 'class': 'resizable-textarea'}),\n        max_length=200\n    )\n    class Meta:\n        model = Comment\n        fields = [\"content\"]",
         "detail": "m183.forms",
         "documentation": {}
     },
@@ -602,7 +723,7 @@
         "kind": 6,
         "importPath": "m183.models",
         "description": "m183.models",
-        "peekOfCode": "class Post(models.Model):\n    STATUS_CHOICES = [\n        ('hidden', 'Hidden'),\n        ('published', 'Published'),\n        ('deleted', 'Deleted'),\n    ]\n    name = models.CharField(max_length=200)\n    content = models.TextField()\n    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='hidden')\n    author = models.ForeignKey(User, on_delete=models.CASCADE)",
+        "peekOfCode": "class Post(models.Model):\n    STATUS_CHOICES = [\n        ('hidden', 'Hidden'),\n        ('published', 'Published'),\n        ('deleted', 'Deleted'),\n    ]\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    name = models.CharField(max_length=200)\n    content = models.TextField()\n    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='hidden')",
         "detail": "m183.models",
         "documentation": {}
     },
@@ -611,7 +732,7 @@
         "kind": 6,
         "importPath": "m183.models",
         "description": "m183.models",
-        "peekOfCode": "class Comment(models.Model):\n    content = models.CharField(max_length=200)\n    post = models.ForeignKey(Post, on_delete=models.CASCADE)\n    author = models.ForeignKey(User, on_delete=models.CASCADE)\n    created_at = models.DateTimeField(auto_now_add=True)\n    def __str__(self):\n        return self.content\nclass LoginAttempt(models.Model):\n    username = models.CharField(max_length=200)\n    timestamp = models.DateTimeField(auto_now_add=True)",
+        "peekOfCode": "class Comment(models.Model):\n    content = models.TextField()\n    post = models.ForeignKey(Post, on_delete=models.CASCADE)\n    author = models.ForeignKey(User, on_delete=models.CASCADE)\n    created_at = models.DateTimeField(auto_now_add=True)\n    def __str__(self):\n        return self.content\nclass LoginAttempt(models.Model):\n    username = models.CharField(max_length=200)\n    timestamp = models.DateTimeField(auto_now_add=True)",
         "detail": "m183.models",
         "documentation": {}
     },
@@ -629,7 +750,7 @@
         "kind": 5,
         "importPath": "m183.urls",
         "description": "m183.urls",
-        "peekOfCode": "urlpatterns = [\n    path(\"\", views.home, name=\"home\"),\n    path(\"dashboard/\", views.dashboard, name=\"dashboard\"),\n    path(\"post/<int:post_id>/\", views.post_detail, name=\"post_detail\"),\n    #Account management\n    path(\"login/\", views.login_view, name=\"login\"),\n    path(\"logout/\", auth_views.LogoutView.as_view(), name=\"logout\"),\n    path(\"register/\", views.register, name=\"register\"),\n    path(\"account/\", views.account_view, name=\"account\"),\n    path(\"account/edit/\", views.account_edit_view, name=\"account_edit\"),",
+        "peekOfCode": "urlpatterns = [\n    path(\"\", views.home, name=\"home\"),\n    path(\"dashboard/\", views.dashboard, name=\"dashboard\"),\n    path(\"post/<uuid:post_id>/\", views.post_detail, name=\"post_detail\"),    #Account management\n    path(\"login/\", views.login_view, name=\"login\"),\n    path(\"logout/\", auth_views.LogoutView.as_view(), name=\"logout\"),\n    path(\"register/\", views.register, name=\"register\"),\n    path(\"account/\", views.account_view, name=\"account\"),\n    path(\"account/edit/\", views.account_edit_view, name=\"account_edit\"),\n    path(",
         "detail": "m183.urls",
         "documentation": {}
     },
@@ -809,7 +930,7 @@
         "kind": 5,
         "importPath": "main.settings",
         "description": "main.settings",
-        "peekOfCode": "MEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nLOGIN_URL = 'login'\nLOGOUT_URL = 'logout'\nLOGIN_REDIRECT_URL = 'dashboard'\nLOGOUT_REDIRECT_URL = 'login'",
+        "peekOfCode": "MEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nLOGIN_URL = 'login'\nLOGOUT_URL = 'logout'\nLOGIN_REDIRECT_URL = 'dashboard'\nLOGOUT_REDIRECT_URL = 'login'\nLOGGING = {",
         "detail": "main.settings",
         "documentation": {}
     },
@@ -818,7 +939,7 @@
         "kind": 5,
         "importPath": "main.settings",
         "description": "main.settings",
-        "peekOfCode": "MEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nLOGIN_URL = 'login'\nLOGOUT_URL = 'logout'\nLOGIN_REDIRECT_URL = 'dashboard'\nLOGOUT_REDIRECT_URL = 'login'",
+        "peekOfCode": "MEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nLOGIN_URL = 'login'\nLOGOUT_URL = 'logout'\nLOGIN_REDIRECT_URL = 'dashboard'\nLOGOUT_REDIRECT_URL = 'login'\nLOGGING = {\n    'version': 1,",
         "detail": "main.settings",
         "documentation": {}
     },
@@ -827,7 +948,7 @@
         "kind": 5,
         "importPath": "main.settings",
         "description": "main.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nLOGIN_URL = 'login'\nLOGOUT_URL = 'logout'\nLOGIN_REDIRECT_URL = 'dashboard'\nLOGOUT_REDIRECT_URL = 'login'",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nLOGIN_URL = 'login'\nLOGOUT_URL = 'logout'\nLOGIN_REDIRECT_URL = 'dashboard'\nLOGOUT_REDIRECT_URL = 'login'\nLOGGING = {\n    'version': 1,\n    'disable_existing_loggers': False,\n    'handlers': {\n        'file': {",
         "detail": "main.settings",
         "documentation": {}
     },
@@ -836,7 +957,7 @@
         "kind": 5,
         "importPath": "main.settings",
         "description": "main.settings",
-        "peekOfCode": "LOGIN_URL = 'login'\nLOGOUT_URL = 'logout'\nLOGIN_REDIRECT_URL = 'dashboard'\nLOGOUT_REDIRECT_URL = 'login'",
+        "peekOfCode": "LOGIN_URL = 'login'\nLOGOUT_URL = 'logout'\nLOGIN_REDIRECT_URL = 'dashboard'\nLOGOUT_REDIRECT_URL = 'login'\nLOGGING = {\n    'version': 1,\n    'disable_existing_loggers': False,\n    'handlers': {\n        'file': {\n            'level': 'DEBUG',",
         "detail": "main.settings",
         "documentation": {}
     },
@@ -845,7 +966,7 @@
         "kind": 5,
         "importPath": "main.settings",
         "description": "main.settings",
-        "peekOfCode": "LOGOUT_URL = 'logout'\nLOGIN_REDIRECT_URL = 'dashboard'\nLOGOUT_REDIRECT_URL = 'login'",
+        "peekOfCode": "LOGOUT_URL = 'logout'\nLOGIN_REDIRECT_URL = 'dashboard'\nLOGOUT_REDIRECT_URL = 'login'\nLOGGING = {\n    'version': 1,\n    'disable_existing_loggers': False,\n    'handlers': {\n        'file': {\n            'level': 'DEBUG',\n            'class': 'logging.FileHandler',",
         "detail": "main.settings",
         "documentation": {}
     },
@@ -854,7 +975,7 @@
         "kind": 5,
         "importPath": "main.settings",
         "description": "main.settings",
-        "peekOfCode": "LOGIN_REDIRECT_URL = 'dashboard'\nLOGOUT_REDIRECT_URL = 'login'",
+        "peekOfCode": "LOGIN_REDIRECT_URL = 'dashboard'\nLOGOUT_REDIRECT_URL = 'login'\nLOGGING = {\n    'version': 1,\n    'disable_existing_loggers': False,\n    'handlers': {\n        'file': {\n            'level': 'DEBUG',\n            'class': 'logging.FileHandler',\n            'filename': 'general.log',",
         "detail": "main.settings",
         "documentation": {}
     },
@@ -863,7 +984,16 @@
         "kind": 5,
         "importPath": "main.settings",
         "description": "main.settings",
-        "peekOfCode": "LOGOUT_REDIRECT_URL = 'login'",
+        "peekOfCode": "LOGOUT_REDIRECT_URL = 'login'\nLOGGING = {\n    'version': 1,\n    'disable_existing_loggers': False,\n    'handlers': {\n        'file': {\n            'level': 'DEBUG',\n            'class': 'logging.FileHandler',\n            'filename': 'general.log',\n        },",
+        "detail": "main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGGING",
+        "kind": 5,
+        "importPath": "main.settings",
+        "description": "main.settings",
+        "peekOfCode": "LOGGING = {\n    'version': 1,\n    'disable_existing_loggers': False,\n    'handlers': {\n        'file': {\n            'level': 'DEBUG',\n            'class': 'logging.FileHandler',\n            'filename': 'general.log',\n        },\n    },",
         "detail": "main.settings",
         "documentation": {}
     },

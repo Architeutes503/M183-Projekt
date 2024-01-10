@@ -4,26 +4,43 @@
         <h2 class="post-title">{{ post.name }}</h2>
         <p class="post-author">Author: <strong>{{ post.author.username }}</strong></p>
         <p class="post-date">Published at: <em>{{ post.created_at }}</em></p>
-        <p class="post-content">{{ post.content }}</p>
+        <p class="post-content">{{ post.content|linebreaksbr }}</p>
+
+        {% if user == post.author or user.is_staff %}
+            <form method="post"> 
+                {% csrf_token %}
+                <select name="status">
+                    {% for status in statuses %}
+                        <option value="{{ status }}" {% if post.status == status %}selected{% endif %}>{{ status }}</option>
+                    {% endfor %}
+                </select>
+                <button type="submit">Change status</button>
+            </form>
+        {% endif %}
 
         <h3>Add a comment</h3>
         <form method="post">
             {% csrf_token %}
-            {{ form.as_p }}
+            {{ form.content }}
             <button type="submit">Submit</button>
         </form>
 
         {% for comment in comments %}
             <div class="comment" style="border: 1px solid #ccc; margin: 10px 0; padding: 10px;">
                 <p class="comment-author"><strong>{{ comment.author.username }}</strong> said:</p>
-                <p class="comment-content">{{ comment.content }}</p>
+                <p class="comment-content">{{ comment.content|linebreaksbr }}</p>
                 <p class="comment-date">Commented at: <em>{{ comment.created_at }}</em></p>
             </div>
         {% endfor %}
-        {% if user == post.author %}
-            <p>User is creator</p>
-            {% comment %} <a href="{% url 'post_edit' post.id %}">Edit</a> {% endcomment %}
-        {% endif %}
+        
     </div>
+
+    <style>
+        .resizable-textarea {
+            resize: both;
+            overflow: auto;
+        }
+    </style>
+
 
 {% endblock %}

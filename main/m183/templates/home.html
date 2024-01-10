@@ -4,7 +4,6 @@
   <div class="post">
     <h2><a href="{% url 'post_detail' post.id %}">{{ post.name }}</a></h2>
     <p>Author: {{ post.author.username }}</p>
-    <p>Published at: {{ post.created_at }}</p>
   </div>
   <hr>
 {% empty %}

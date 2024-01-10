@@ -4,6 +4,8 @@ from django.shortcuts import get_object_or_404, redirect, render
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.utils import timezone
+import logging
+logger = logging.getLogger(__name__)
 
 
 
@@ -32,6 +34,7 @@ def register(request):  # sourcery skip: extract-method
             user = authenticate(username=username, password=password)
             login(request, user)
             messages.success(request, "You have successfully registered.")
+            logger.info("User {} has successfully registered.".format(username))
             return redirect("dashboard")
     else:
         form = CustomUserCreationForm()
@@ -48,15 +51,18 @@ def login_view(request):
             if User.objects.filter(username=username).exists():
                 if LoginAttempt.has_exceeded_limit(username):
                     messages.warning(request, "You have exceeded the limit of login attempts. Please try again later.")
+                    logger.warning("User {} has exceeded the limit of login attempts.".format(username))
                     return redirect("home")
                 if form.is_valid():
                     user = form.get_user()
                     login(request, user)
                     messages.success(request, "You have successfully logged in.")
+                    logger.info("User {} has successfully logged in.".format(username))
                     return redirect("dashboard")
                 else:
                     LoginAttempt.objects.create(username=username, timestamp=timezone.now())
             else:
+                logger.info("User {} does not exist.".format(username))
                 messages.warning(request, "No user with that username exists.")
                 return redirect("login")
         else:
@@ -64,6 +70,7 @@ def login_view(request):
         return render(request, "account_management/login.html", {"form": form})
     except Exception:
         messages.error(request, "An error occurred, please try again.")
+        logger.error("An error occurred while logging in.")
         return redirect("home")
 
 
@@ -85,6 +92,7 @@ def password_change_view(request):
             password_form.save()
             update_session_auth_hash(request, password_form.user)
             messages.success(request, "Your password has been updated.")
+            logger.info("User {} has successfully changed their password.".format(request.user.username))
             return redirect("account")
     else:
         password_form = PasswordUpdateForm(request.user)
@@ -104,6 +112,7 @@ def account_edit_view(request):
         if user_form.is_valid():
             user_form.save()
             messages.success(request, "Your account has been updated.")
+            logger.info("User {} has successfully updated their account.".format(request.user.username))
             return redirect("account")
     else:
         user_form = UserUpdateForm(instance=request.user)
