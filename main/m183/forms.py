@@ -6,11 +6,13 @@ from django.contrib.auth.forms import (
     UserChangeForm,
 )
 from django.contrib.auth.models import User
+from .models import Comment
+
 
 
 class CustomUserCreationForm(UserCreationForm):
     username = forms.CharField(
-        required=True, widget=forms.TextInput(attrs={"class": "custom-input"})
+        required=True, widget=forms.TextInput(attrs={"class": "custom-input"}), max_length=150
     )
     password1 = forms.CharField(
         widget=forms.PasswordInput(attrs={"class": "custom-input"})
@@ -43,12 +45,13 @@ class CustomAuthenticationForm(AuthenticationForm):
         
         
 class UserUpdateForm(UserChangeForm):
+    username = forms.CharField(
+        required=True, widget=forms.TextInput(attrs={"class": "custom-input"}), max_length=150
+    )
+    
     class Meta:
         model = User
         fields = ["username"]
-        widgets = {
-            "username": forms.TextInput(attrs={"class": "custom-input"}),
-        }
 
 
 class PasswordUpdateForm(PasswordChangeForm):
@@ -59,3 +62,9 @@ class PasswordUpdateForm(PasswordChangeForm):
         self.fields["new_password2"].label = "Confirm New Password"
         for field_name in ["old_password", "new_password1", "new_password2"]:
             self.fields[field_name].widget.attrs.update({"class": "custom-input"})
+            
+            
+class CommentForm(forms.ModelForm):
+    class Meta:
+        model = Comment
+        fields = ['content']

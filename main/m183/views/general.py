@@ -3,10 +3,14 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.shortcuts import get_object_or_404, redirect, render
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.utils import timezone
 
 
 
-
+from..models import (
+    User,
+    LoginAttempt
+)
 
 from ..forms import (
     CustomUserCreationForm,
@@ -27,29 +31,44 @@ def register(request):  # sourcery skip: extract-method
             password = form.cleaned_data.get("password1")
             user = authenticate(username=username, password=password)
             login(request, user)
-            return redirect("home")
+            messages.success(request, "You have successfully registered.")
+            return redirect("dashboard")
     else:
         form = CustomUserCreationForm()
     return render(request, "account_management/register.html", {"form": form})
 
 
+
+
 def login_view(request):
-    if request.method == "POST":
-        form = AuthenticationForm(data=request.POST)
-        if form.is_valid():
-            user = form.get_user()
-            login(request, user)
-            return redirect("home")
-    else:
-        form = AuthenticationForm()
-    return render(request, "account_management/login.html", {"form": form})
+    try:
+        if request.method == "POST":
+            form = AuthenticationForm(request, data=request.POST)
+            username = request.POST.get('username')
+            if User.objects.filter(username=username).exists():
+                if LoginAttempt.has_exceeded_limit(username):
+                    messages.warning(request, "You have exceeded the limit of login attempts. Please try again later.")
+                    return redirect("home")
+                if form.is_valid():
+                    user = form.get_user()
+                    login(request, user)
+                    messages.success(request, "You have successfully logged in.")
+                    return redirect("dashboard")
+                else:
+                    LoginAttempt.objects.create(username=username, timestamp=timezone.now())
+            else:
+                messages.warning(request, "No user with that username exists.")
+                return redirect("login")
+        else:
+            form = AuthenticationForm()
+        return render(request, "account_management/login.html", {"form": form})
+    except Exception:
+        messages.error(request, "An error occurred, please try again.")
+        return redirect("home")
 
 
 @login_required
 def account_view(request):
-    if 'guest' in request.user.username:
-        messages.info(request, "Guest accounts can't be modified. Please register for a full account.")
-        return redirect("home")
     if request.method == "POST":
         if "edit_account" in request.POST:
             return redirect("account_edit")

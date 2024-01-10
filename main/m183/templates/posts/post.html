@@ -6,6 +6,13 @@
         <p class="post-date">Published at: <em>{{ post.created_at }}</em></p>
         <p class="post-content">{{ post.content }}</p>
 
+        <h3>Add a comment</h3>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Submit</button>
+        </form>
+
         {% for comment in comments %}
             <div class="comment" style="border: 1px solid #ccc; margin: 10px 0; padding: 10px;">
                 <p class="comment-author"><strong>{{ comment.author.username }}</strong> said:</p>
@@ -18,6 +25,5 @@
             {% comment %} <a href="{% url 'post_edit' post.id %}">Edit</a> {% endcomment %}
         {% endif %}
     </div>
-
 
 {% endblock %}

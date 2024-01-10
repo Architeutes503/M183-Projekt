@@ -6,7 +6,17 @@
     window.location.href = "/admin/m183/post";
   </script>
 {% else %}
-  <p>User Dashboard</p>
+  <div>
+    {% for post in user_posts %}
+      <div class="post">
+        <h2 class="post-title"><a href="{% url 'post_detail' post.id %}">{{ post.name }}</a> - <em>Status: {{ post.status }}</em></h2>
+        <p class="post-date">Published at: <em>{{ post.created_at }}</em></p>
+        <hr>
+      </div>
+    {% empty %}
+      <p>No posts found.</p>
+    {% endfor %}
+  </div>
 {% endif %}
 
 

@@ -3,6 +3,9 @@
 {% block content %}
 <div>
     <h1>Account Dashboard</h1>
+    {% if errorValue %}
+        <p>{{ errorValue }}</p>
+    {% endif %}
     <form method="POST" action="{% url 'account' %}" class="text-center">
         {% csrf_token %}
         <button type="submit" name="edit_account">Edit Account</button>
