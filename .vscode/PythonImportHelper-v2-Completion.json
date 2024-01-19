@@ -783,6 +783,15 @@
         "documentation": {}
     },
     {
+        "label": "create_post_view",
+        "kind": 2,
+        "importPath": "main.m183.views.posts",
+        "description": "main.m183.views.posts",
+        "peekOfCode": "def create_post_view(request):\n    if request.method == 'POST':\n        form = PostForm(request.POST)\n        if form.is_valid():\n            post = form.save(commit=False)\n            post.author = request.user\n            post.save()\n            messages.success(request, 'Your post has been created!')\n            return redirect('post_detail', post_id=post.id)\n        else:",
+        "detail": "main.m183.views.posts",
+        "documentation": {}
+    },
+    {
         "label": "logger",
         "kind": 5,
         "importPath": "main.m183.views.posts",
@@ -859,7 +868,16 @@
         "kind": 6,
         "importPath": "main.m183.forms",
         "description": "main.m183.forms",
-        "peekOfCode": "class SMSCodeForm(forms.Form):\n    code = forms.CharField(max_length=6, required=True)\n    def clean_code(self):\n        code = self.cleaned_data['code']\n        return code",
+        "peekOfCode": "class SMSCodeForm(forms.Form):\n    code = forms.CharField(max_length=6, required=True)\n    def clean_code(self):\n        code = self.cleaned_data['code']\n        return code\nclass PostForm(forms.ModelForm):\n    class Meta:\n        model = Post\n        fields = ['name', 'content', 'status']",
+        "detail": "main.m183.forms",
+        "documentation": {}
+    },
+    {
+        "label": "PostForm",
+        "kind": 6,
+        "importPath": "main.m183.forms",
+        "description": "main.m183.forms",
+        "peekOfCode": "class PostForm(forms.ModelForm):\n    class Meta:\n        model = Post\n        fields = ['name', 'content', 'status']",
         "detail": "main.m183.forms",
         "documentation": {}
     },
@@ -904,7 +922,7 @@
         "kind": 5,
         "importPath": "main.m183.urls",
         "description": "main.m183.urls",
-        "peekOfCode": "urlpatterns = [\n    path(\"\", views.home, name=\"home\"),\n    path(\"dashboard/\", views.dashboard, name=\"dashboard\"),\n    path(\"post/<uuid:post_id>/\", views.post_detail, name=\"post_detail\"),    #Account management\n    path(\"login/\", views.login_view, name=\"login\"),\n    path(\"logout/\", auth_views.LogoutView.as_view(), name=\"logout\"),\n    path(\"register/\", views.register, name=\"register\"),\n    path(\"account/\", views.account_view, name=\"account\"),\n    path(\"account/edit/\", views.account_edit_view, name=\"account_edit\"),\n    path(",
+        "peekOfCode": "urlpatterns = [\n    path(\"\", views.home, name=\"home\"),\n    path(\"dashboard/\", views.dashboard, name=\"dashboard\"),\n    path(\"post/<uuid:post_id>/\", views.post_detail, name=\"post_detail\"),\n    path('create-post/', views.create_post_view, name='create_post'),\n    path(\"login/\", views.login_view, name=\"login\"),\n    path(\"logout/\", auth_views.LogoutView.as_view(), name=\"logout\"),\n    path(\"register/\", views.register, name=\"register\"),\n    path(\"account/\", views.account_view, name=\"account\"),\n    path(\"account/edit/\", views.account_edit_view, name=\"account_edit\"),",
         "detail": "main.m183.urls",
         "documentation": {}
     },

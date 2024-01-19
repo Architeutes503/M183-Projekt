@@ -5,7 +5,7 @@ from django.contrib.auth.forms import (
     PasswordChangeForm,
     UserChangeForm,
 )
-from .models import Profile, Comment, User
+from .models import Profile, Comment, User, Post
 from .models import Comment
 
 
@@ -100,3 +100,9 @@ class SMSCodeForm(forms.Form):
     def clean_code(self):
         code = self.cleaned_data['code']
         return code
+    
+    
+class PostForm(forms.ModelForm):
+    class Meta:
+        model = Post
+        fields = ['name', 'content', 'status']

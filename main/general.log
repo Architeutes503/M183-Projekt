@@ -254,3 +254,48 @@ Starting new HTTPS connection (1): m183.gibz-informatik.ch:443
 https://m183.gibz-informatik.ch:443 "POST /api/sms/message HTTP/1.1" 204 0
 Starting new HTTPS connection (1): m183.gibz-informatik.ch:443
 https://m183.gibz-informatik.ch:443 "POST /api/sms/message HTTP/1.1" 204 0
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\posts.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\posts.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): m183.gibz-informatik.ch:443
+https://m183.gibz-informatik.ch:443 "POST /api/sms/message HTTP/1.1" 204 0
+Internal Server Error: /create-post/
+Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\posts.py", line 60, in create_post_view
+    return redirect('post_detail', id=post.id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'post_detail' with keyword arguments '{'id': UUID('363362bf-afe3-4406-b946-9e86c401438f')}' not found. 1 pattern(s) tried: ['post/(?P<post_id>[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/\\Z']
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\posts.py changed, reloading.
+Watching for file changes with StatReloader
+Comment created: asdfasfd by user: test

@@ -7,6 +7,8 @@
   </script>
 {% else %}
   <div>
+    <a href="{% url 'create_post' %}" class="btn btn-primary">Create New Post</a>
+
     {% for post in user_posts %}
       <div class="post">
         <h2 class="post-title"><a href="{% url 'post_detail' post.id %}">{{ post.name }}</a> - <em>Status: {{ post.status }}</em></h2>

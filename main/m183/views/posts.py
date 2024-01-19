@@ -1,7 +1,7 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import get_object_or_404, redirect, render
 from ..models import Post, Comment
-from ..forms import CommentForm
+from ..forms import CommentForm, PostForm
 from django.contrib import messages
 import logging
 logger = logging.getLogger(__name__)
@@ -46,3 +46,20 @@ def post_detail(request, post_id):
     else:
         logger.info('User: %s tried to access Post: %s which is not found or not accessible.' % (request.user, post))
         return redirect('home')
+
+
+@login_required
+def create_post_view(request):
+    if request.method == 'POST':
+        form = PostForm(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.save()
+            messages.success(request, 'Your post has been created!')
+            return redirect('post_detail', post_id=post.id)
+        else:
+            messages.error(request, 'Please correct the error below.')
+    else:
+        form = PostForm()
+    return render(request, 'posts/create_post.html', {'form': form})
