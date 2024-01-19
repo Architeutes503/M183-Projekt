@@ -4,7 +4,12 @@ from django.shortcuts import get_object_or_404, redirect, render
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.utils import timezone
+from datetime import datetime, timedelta
 import logging
+import random
+import requests
+
+
 logger = logging.getLogger(__name__)
 
 
@@ -17,7 +22,9 @@ from..models import (
 from ..forms import (
     CustomUserCreationForm,
     UserUpdateForm,
-    PasswordUpdateForm
+    PasswordUpdateForm,
+    ProfileForm,
+    SMSCodeForm
 )
 
 
@@ -41,6 +48,19 @@ def register(request):  # sourcery skip: extract-method
     return render(request, "account_management/register.html", {"form": form})
 
 
+def send_sms_code(mobile_number):
+    code = f"{random.randint(100000, 999999)}"
+    url = 'https://m183.gibz-informatik.ch/api/sms/message'
+    headers = {
+        'Content-Type': 'application/json',
+        'X-Api-Key': 'NQA3ADQANQA4ADUANwA1ADMAOQA0ADQANAAxADcAMgA5ADMA',
+    }
+    payload = {
+        'mobileNumber': mobile_number,
+        'message': f'Your login code is {code}',
+    }
+    response = requests.post(url, headers=headers, json=payload)
+    return code if response.status_code == 204 else None
 
 
 def login_view(request):
@@ -55,10 +75,20 @@ def login_view(request):
                     return redirect("home")
                 if form.is_valid():
                     user = form.get_user()
-                    login(request, user)
-                    messages.success(request, "You have successfully logged in.")
-                    logger.info("User {} has successfully logged in.".format(username))
-                    return redirect("dashboard")
+                    profile = user.profile
+                    sms_code = send_sms_code(profile.phone_number)
+                    if sms_code:
+                        request.session['username'] = username
+                        request.session['password'] = request.POST.get('password')
+                        LoginAttempt.objects.create(
+                            username=username,
+                            sms_code=sms_code,
+                            code_expires=timezone.now() + timedelta(minutes=5)
+                        )
+                        return redirect("enter_sms_code")
+                    else:
+                        messages.error(request, "Failed to send SMS code.")
+                        return redirect("login")
                 else:
                     LoginAttempt.objects.create(username=username, timestamp=timezone.now())
             else:
@@ -68,7 +98,8 @@ def login_view(request):
         else:
             form = AuthenticationForm()
         return render(request, "account_management/login.html", {"form": form})
-    except Exception:
+    except Exception as e:
+        print(e)
         messages.error(request, "An error occurred, please try again.")
         logger.error("An error occurred while logging in.")
         return redirect("home")
@@ -109,17 +140,63 @@ def password_change_view(request):
 def account_edit_view(request):
     if request.method == "POST":
         user_form = UserUpdateForm(request.POST, instance=request.user)
-        if user_form.is_valid():
+        profile_form = ProfileForm(request.POST, instance=request.user.profile)
+        
+        if user_form.is_valid() and profile_form.is_valid():
             user_form.save()
+            profile_form.save()
             messages.success(request, "Your account has been updated.")
             logger.info("User {} has successfully updated their account.".format(request.user.username))
             return redirect("account")
     else:
         user_form = UserUpdateForm(instance=request.user)
+        profile_form = ProfileForm(instance=request.user.profile)
 
     context = {
         "user_form": user_form,
+        "profile_form": profile_form,
         "title": "Edit Account",
     }
 
     return render(request, "account_management/account_edit.html", context)
+
+
+def enter_sms_code_view(request):
+    if request.method == "POST":
+        form = SMSCodeForm(request.POST)
+        if form.is_valid():
+            code = form.cleaned_data['code']
+            username = request.session.get('username')
+            password = request.session.get('password')
+
+            try:
+
+                attempt = LoginAttempt.objects.get(
+                    username=username,
+                    sms_code=code,
+                )
+
+                if attempt.code_expires >= timezone.now():
+                    # If the code is correct and not expired, authenticate the user's password
+                    user = authenticate(username=attempt.username, password=password)
+                    if user is not None:
+                        login(request, user)
+                        request.session.pop('username', None)
+                        request.session.pop('password', None)
+                        attempt.sms_code = ""
+                        attempt.code_expires = datetime(year=2001, month=1, day=1)
+                        attempt.save()
+                        messages.success(request, "You have successfully logged in.")
+                        return redirect("dashboard")
+                    else:
+                        messages.error(request, "Invalid password.")
+                else:
+                    messages.error(request, "Invalid or expired code.")
+            except LoginAttempt.DoesNotExist:
+                messages.error(request, "Invalid or expired code.")
+        else:
+            messages.error(request, "Invalid code format.")
+    else:
+        form = SMSCodeForm()
+
+    return render(request, "account_management/enter_sms_code.html", {"form": form})

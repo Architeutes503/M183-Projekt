@@ -2,18 +2,23 @@
 
 {% block content %}
 <div>
-    <h1>Edit Username</h1>
+    <h1>Edit Account</h1>
     <form method="post">
         {% csrf_token %}
         {{ user_form.username.errors }}
         <br>
+        {{ user_form.username.label_tag }}
         {{ user_form.username }}
         <br>
+        {{ profile_form.phone_number.errors }}
+        <br>
+        {{ profile_form.phone_number.label_tag }}
+        {{ profile_form.phone_number }}
         <br>
         <button type="submit" name="user_form_submit">Update Account</button>
     </form>
     <br>
-    <form method="POST" action="{% url 'account' %}">
+    <form method="POST" action="{% url 'password_change' %}">
         {% csrf_token %}
         <button type="submit" name="change_password">Change Password</button>
     </form>

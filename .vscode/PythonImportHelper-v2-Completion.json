@@ -1,0 +1,1181 @@
+[
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "template",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "Group",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "update_session_auth_hash",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "AuthenticationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "AuthenticationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordChangeForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "UserChangeForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "csrf_exempt",
+        "importPath": "django.views.decorators.csrf",
+        "description": "django.views.decorators.csrf",
+        "isExtraImport": true,
+        "detail": "django.views.decorators.csrf",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "re_path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "main.m183.migrations.0001_initial",
+        "description": "main.m183.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Post',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "main.m183.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "main.m183.migrations.0002_loginattempt",
+        "description": "main.m183.migrations.0002_loginattempt",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n        ('m183', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='LoginAttempt',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "main.m183.migrations.0002_loginattempt",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "main.m183.migrations.0003_remove_loginattempt_user_loginattempt_username",
+        "description": "main.m183.migrations.0003_remove_loginattempt_user_loginattempt_username",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('m183', '0002_loginattempt'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='loginattempt',\n            name='user',\n        ),\n        migrations.AddField(",
+        "detail": "main.m183.migrations.0003_remove_loginattempt_user_loginattempt_username",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "main.m183.migrations.0004_alter_comment_content",
+        "description": "main.m183.migrations.0004_alter_comment_content",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('m183', '0003_remove_loginattempt_user_loginattempt_username'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='comment',\n            name='content',\n            field=models.TextField(),\n        ),",
+        "detail": "main.m183.migrations.0004_alter_comment_content",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "main.m183.migrations.0005_alter_post_id",
+        "description": "main.m183.migrations.0005_alter_post_id",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('m183', '0004_alter_comment_content'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='post',\n            name='id',\n            field=models.UUIDField(default=uuid.uuid4, editable=False, primary_key=True, serialize=False),\n        ),",
+        "detail": "main.m183.migrations.0005_alter_post_id",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "main.m183.migrations.0006_profile",
+        "description": "main.m183.migrations.0006_profile",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n        ('m183', '0005_alter_post_id'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Profile',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "main.m183.migrations.0006_profile",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "main.m183.migrations.0007_loginattempt_code_expires_loginattempt_sms_code",
+        "description": "main.m183.migrations.0007_loginattempt_code_expires_loginattempt_sms_code",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('m183', '0006_profile'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='loginattempt',\n            name='code_expires',\n            field=models.DateTimeField(blank=True, null=True),\n        ),",
+        "detail": "main.m183.migrations.0007_loginattempt_code_expires_loginattempt_sms_code",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "main.m183.migrations.0008_alter_profile_phone_number",
+        "description": "main.m183.migrations.0008_alter_profile_phone_number",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('m183', '0007_loginattempt_code_expires_loginattempt_sms_code'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='profile',\n            name='phone_number',\n            field=models.CharField(default='0000000000', max_length=20),\n        ),",
+        "detail": "main.m183.migrations.0008_alter_profile_phone_number",
+        "documentation": {}
+    },
+    {
+        "label": "has_group",
+        "kind": 2,
+        "importPath": "main.m183.templatetags.custom_filter",
+        "description": "main.m183.templatetags.custom_filter",
+        "peekOfCode": "def has_group(user, group_name):\n    return Group.objects.filter(name=group_name, user=user).exists()",
+        "detail": "main.m183.templatetags.custom_filter",
+        "documentation": {}
+    },
+    {
+        "label": "register",
+        "kind": 5,
+        "importPath": "main.m183.templatetags.custom_filter",
+        "description": "main.m183.templatetags.custom_filter",
+        "peekOfCode": "register = template.Library()\n@register.filter(name='has_group')\ndef has_group(user, group_name):\n    return Group.objects.filter(name=group_name, user=user).exists()",
+        "detail": "main.m183.templatetags.custom_filter",
+        "documentation": {}
+    },
+    {
+        "label": "register",
+        "kind": 2,
+        "importPath": "main.m183.views.general",
+        "description": "main.m183.views.general",
+        "peekOfCode": "def register(request):  # sourcery skip: extract-method\n    if request.method == \"POST\":\n        form = CustomUserCreationForm(request.POST)\n        if form.is_valid():\n            form.save()\n            username = form.cleaned_data.get(\"username\")\n            password = form.cleaned_data.get(\"password1\")\n            user = authenticate(username=username, password=password)\n            login(request, user)\n            messages.success(request, \"You have successfully registered.\")",
+        "detail": "main.m183.views.general",
+        "documentation": {}
+    },
+    {
+        "label": "send_sms_code",
+        "kind": 2,
+        "importPath": "main.m183.views.general",
+        "description": "main.m183.views.general",
+        "peekOfCode": "def send_sms_code(mobile_number):\n    code = f\"{random.randint(100000, 999999)}\"\n    url = 'https://m183.gibz-informatik.ch/api/sms/message'\n    headers = {\n        'Content-Type': 'application/json',\n        'X-Api-Key': 'NQA3ADQANQA4ADUANwA1ADMAOQA0ADQANAAxADcAMgA5ADMA',\n    }\n    payload = {\n        'mobileNumber': mobile_number,\n        'message': f'Your login code is {code}',",
+        "detail": "main.m183.views.general",
+        "documentation": {}
+    },
+    {
+        "label": "login_view",
+        "kind": 2,
+        "importPath": "main.m183.views.general",
+        "description": "main.m183.views.general",
+        "peekOfCode": "def login_view(request):\n    try:\n        if request.method == \"POST\":\n            form = AuthenticationForm(request, data=request.POST)\n            username = request.POST.get('username')\n            if User.objects.filter(username=username).exists():\n                if LoginAttempt.has_exceeded_limit(username):\n                    messages.warning(request, \"You have exceeded the limit of login attempts. Please try again later.\")\n                    logger.warning(\"User {} has exceeded the limit of login attempts.\".format(username))\n                    return redirect(\"home\")",
+        "detail": "main.m183.views.general",
+        "documentation": {}
+    },
+    {
+        "label": "account_view",
+        "kind": 2,
+        "importPath": "main.m183.views.general",
+        "description": "main.m183.views.general",
+        "peekOfCode": "def account_view(request):\n    if request.method == \"POST\":\n        if \"edit_account\" in request.POST:\n            return redirect(\"account_edit\")\n        elif \"change_password\" in request.POST:\n            return redirect(\"password_change\")\n    return render(request, \"account_management/account_dashboard.html\")\n@login_required\ndef password_change_view(request):\n    if request.method == \"POST\":",
+        "detail": "main.m183.views.general",
+        "documentation": {}
+    },
+    {
+        "label": "password_change_view",
+        "kind": 2,
+        "importPath": "main.m183.views.general",
+        "description": "main.m183.views.general",
+        "peekOfCode": "def password_change_view(request):\n    if request.method == \"POST\":\n        password_form = PasswordUpdateForm(request.user, request.POST)\n        if password_form.is_valid():\n            password_form.save()\n            update_session_auth_hash(request, password_form.user)\n            messages.success(request, \"Your password has been updated.\")\n            logger.info(\"User {} has successfully changed their password.\".format(request.user.username))\n            return redirect(\"account\")\n    else:",
+        "detail": "main.m183.views.general",
+        "documentation": {}
+    },
+    {
+        "label": "account_edit_view",
+        "kind": 2,
+        "importPath": "main.m183.views.general",
+        "description": "main.m183.views.general",
+        "peekOfCode": "def account_edit_view(request):\n    if request.method == \"POST\":\n        user_form = UserUpdateForm(request.POST, instance=request.user)\n        profile_form = ProfileForm(request.POST, instance=request.user.profile)\n        if user_form.is_valid() and profile_form.is_valid():\n            user_form.save()\n            profile_form.save()\n            messages.success(request, \"Your account has been updated.\")\n            logger.info(\"User {} has successfully updated their account.\".format(request.user.username))\n            return redirect(\"account\")",
+        "detail": "main.m183.views.general",
+        "documentation": {}
+    },
+    {
+        "label": "enter_sms_code_view",
+        "kind": 2,
+        "importPath": "main.m183.views.general",
+        "description": "main.m183.views.general",
+        "peekOfCode": "def enter_sms_code_view(request):\n    if request.method == \"POST\":\n        form = SMSCodeForm(request.POST)\n        if form.is_valid():\n            code = form.cleaned_data['code']\n            username = request.session.get('username')\n            password = request.session.get('password')\n            try:\n                attempt = LoginAttempt.objects.get(\n                    username=username,",
+        "detail": "main.m183.views.general",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "main.m183.views.general",
+        "description": "main.m183.views.general",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nfrom..models import (\n    User,\n    LoginAttempt\n)\nfrom ..forms import (\n    CustomUserCreationForm,\n    UserUpdateForm,\n    PasswordUpdateForm,\n    ProfileForm,",
+        "detail": "main.m183.views.general",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "kind": 2,
+        "importPath": "main.m183.views.json_api",
+        "description": "main.m183.views.json_api",
+        "peekOfCode": "def api_view(request):\n    if request.method == 'GET':\n        api_key = request.GET.get('api_key')\n        if api_key == API_KEY:\n            posts = Post.objects.filter(status='published').values()\n            logger.info(\"API request: %s\" % posts)\n            return JsonResponse({'posts': list(posts)})\n        else:\n            logger.warning(\"Invalid API Key: %s\" % api_key)\n            return JsonResponse({'error': 'Invalid API Key'}, status=403)",
+        "detail": "main.m183.views.json_api",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "main.m183.views.json_api",
+        "description": "main.m183.views.json_api",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nAPI_KEY = '1234567890'\n@csrf_exempt\ndef api_view(request):\n    if request.method == 'GET':\n        api_key = request.GET.get('api_key')\n        if api_key == API_KEY:\n            posts = Post.objects.filter(status='published').values()\n            logger.info(\"API request: %s\" % posts)\n            return JsonResponse({'posts': list(posts)})",
+        "detail": "main.m183.views.json_api",
+        "documentation": {}
+    },
+    {
+        "label": "API_KEY",
+        "kind": 5,
+        "importPath": "main.m183.views.json_api",
+        "description": "main.m183.views.json_api",
+        "peekOfCode": "API_KEY = '1234567890'\n@csrf_exempt\ndef api_view(request):\n    if request.method == 'GET':\n        api_key = request.GET.get('api_key')\n        if api_key == API_KEY:\n            posts = Post.objects.filter(status='published').values()\n            logger.info(\"API request: %s\" % posts)\n            return JsonResponse({'posts': list(posts)})\n        else:",
+        "detail": "main.m183.views.json_api",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "main.m183.views.posts",
+        "description": "main.m183.views.posts",
+        "peekOfCode": "def home(request):\n    posts = Post.objects.filter(status='published')\n    return render(request, 'home.html', {'posts': posts})\n@login_required\ndef dashboard(request):\n    user_posts = Post.objects.filter(author=request.user).exclude(status='deleted')\n    return render(request, 'posts/dashboard.html', {'user_posts': user_posts})\ndef post_detail(request, post_id):\n    post = get_object_or_404(Post, id=post_id)\n    statuses = ['published', 'hidden', 'deleted']",
+        "detail": "main.m183.views.posts",
+        "documentation": {}
+    },
+    {
+        "label": "dashboard",
+        "kind": 2,
+        "importPath": "main.m183.views.posts",
+        "description": "main.m183.views.posts",
+        "peekOfCode": "def dashboard(request):\n    user_posts = Post.objects.filter(author=request.user).exclude(status='deleted')\n    return render(request, 'posts/dashboard.html', {'user_posts': user_posts})\ndef post_detail(request, post_id):\n    post = get_object_or_404(Post, id=post_id)\n    statuses = ['published', 'hidden', 'deleted']\n    if request.method == 'POST':\n        if not request.user.is_authenticated:\n            logger.warning('User not authenticated: %s' % request.user)\n            return redirect('login')",
+        "detail": "main.m183.views.posts",
+        "documentation": {}
+    },
+    {
+        "label": "post_detail",
+        "kind": 2,
+        "importPath": "main.m183.views.posts",
+        "description": "main.m183.views.posts",
+        "peekOfCode": "def post_detail(request, post_id):\n    post = get_object_or_404(Post, id=post_id)\n    statuses = ['published', 'hidden', 'deleted']\n    if request.method == 'POST':\n        if not request.user.is_authenticated:\n            logger.warning('User not authenticated: %s' % request.user)\n            return redirect('login')\n        form = CommentForm(request.POST)\n        if form.is_valid():\n            comment = form.save(commit=False)",
+        "detail": "main.m183.views.posts",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "main.m183.views.posts",
+        "description": "main.m183.views.posts",
+        "peekOfCode": "logger = logging.getLogger(__name__)\ndef home(request):\n    posts = Post.objects.filter(status='published')\n    return render(request, 'home.html', {'posts': posts})\n@login_required\ndef dashboard(request):\n    user_posts = Post.objects.filter(author=request.user).exclude(status='deleted')\n    return render(request, 'posts/dashboard.html', {'user_posts': user_posts})\ndef post_detail(request, post_id):\n    post = get_object_or_404(Post, id=post_id)",
+        "detail": "main.m183.views.posts",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "main.m183.asgi",
+        "description": "main.m183.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "main.m183.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "ProfileForm",
+        "kind": 6,
+        "importPath": "main.m183.forms",
+        "description": "main.m183.forms",
+        "peekOfCode": "class ProfileForm(forms.ModelForm):\n    phone_number = forms.CharField(required=True, max_length=15, widget=forms.TextInput(attrs={\"class\": \"custom-input\"}))\n    class Meta:\n        model = Profile\n        fields = ['phone_number']\nclass CustomUserCreationForm(UserCreationForm):\n    username = forms.CharField(\n        required=True, widget=forms.TextInput(attrs={\"class\": \"custom-input\"}), max_length=150\n    )\n    password1 = forms.CharField(",
+        "detail": "main.m183.forms",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUserCreationForm",
+        "kind": 6,
+        "importPath": "main.m183.forms",
+        "description": "main.m183.forms",
+        "peekOfCode": "class CustomUserCreationForm(UserCreationForm):\n    username = forms.CharField(\n        required=True, widget=forms.TextInput(attrs={\"class\": \"custom-input\"}), max_length=150\n    )\n    password1 = forms.CharField(\n        widget=forms.PasswordInput(attrs={\"class\": \"custom-input\"})\n    )\n    password2 = forms.CharField(\n        widget=forms.PasswordInput(attrs={\"class\": \"custom-input\"})\n    )",
+        "detail": "main.m183.forms",
+        "documentation": {}
+    },
+    {
+        "label": "CustomAuthenticationForm",
+        "kind": 6,
+        "importPath": "main.m183.forms",
+        "description": "main.m183.forms",
+        "peekOfCode": "class CustomAuthenticationForm(AuthenticationForm):\n    username = forms.CharField(widget=forms.TextInput(attrs={\"class\": \"custom-input\"}))\n    password = forms.CharField(\n        widget=forms.PasswordInput(attrs={\"class\": \"custom-input\"})\n    )\n    class Meta:\n        model = User\n        fields = [\"username\", \"password\"]\nclass UserUpdateForm(UserChangeForm):\n    username = forms.CharField(",
+        "detail": "main.m183.forms",
+        "documentation": {}
+    },
+    {
+        "label": "UserUpdateForm",
+        "kind": 6,
+        "importPath": "main.m183.forms",
+        "description": "main.m183.forms",
+        "peekOfCode": "class UserUpdateForm(UserChangeForm):\n    username = forms.CharField(\n        required=True, widget=forms.TextInput(attrs={\"class\": \"custom-input\"}), max_length=150\n    )\n    class Meta:\n        model = User\n        fields = [\"username\"]\nclass PasswordUpdateForm(PasswordChangeForm):\n    def __init__(self, *args, **kwargs):\n        super().__init__(*args, **kwargs)",
+        "detail": "main.m183.forms",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordUpdateForm",
+        "kind": 6,
+        "importPath": "main.m183.forms",
+        "description": "main.m183.forms",
+        "peekOfCode": "class PasswordUpdateForm(PasswordChangeForm):\n    def __init__(self, *args, **kwargs):\n        super().__init__(*args, **kwargs)\n        self.fields[\"old_password\"].label = \"Current Password\"\n        self.fields[\"new_password1\"].label = \"New Password\"\n        self.fields[\"new_password2\"].label = \"Confirm New Password\"\n        for field_name in [\"old_password\", \"new_password1\", \"new_password2\"]:\n            self.fields[field_name].widget.attrs.update({\"class\": \"custom-input\"})\nclass CommentForm(forms.ModelForm):\n    content = forms.CharField(",
+        "detail": "main.m183.forms",
+        "documentation": {}
+    },
+    {
+        "label": "CommentForm",
+        "kind": 6,
+        "importPath": "main.m183.forms",
+        "description": "main.m183.forms",
+        "peekOfCode": "class CommentForm(forms.ModelForm):\n    content = forms.CharField(\n        widget=forms.Textarea(attrs={'rows': 5, 'cols': 50, 'class': 'resizable-textarea'}),\n        max_length=200\n    )\n    class Meta:\n        model = Comment\n        fields = [\"content\"]\nclass SMSCodeForm(forms.Form):\n    code = forms.CharField(max_length=6, required=True)",
+        "detail": "main.m183.forms",
+        "documentation": {}
+    },
+    {
+        "label": "SMSCodeForm",
+        "kind": 6,
+        "importPath": "main.m183.forms",
+        "description": "main.m183.forms",
+        "peekOfCode": "class SMSCodeForm(forms.Form):\n    code = forms.CharField(max_length=6, required=True)\n    def clean_code(self):\n        code = self.cleaned_data['code']\n        return code",
+        "detail": "main.m183.forms",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "kind": 6,
+        "importPath": "main.m183.models",
+        "description": "main.m183.models",
+        "peekOfCode": "class Profile(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    phone_number = models.CharField(max_length=20, default='0000000000', blank=False)\n    def __str__(self):\n        return self.user.username\nclass Post(models.Model):\n    STATUS_CHOICES = [\n        ('hidden', 'Hidden'),\n        ('published', 'Published'),\n        ('deleted', 'Deleted'),",
+        "detail": "main.m183.models",
+        "documentation": {}
+    },
+    {
+        "label": "Post",
+        "kind": 6,
+        "importPath": "main.m183.models",
+        "description": "main.m183.models",
+        "peekOfCode": "class Post(models.Model):\n    STATUS_CHOICES = [\n        ('hidden', 'Hidden'),\n        ('published', 'Published'),\n        ('deleted', 'Deleted'),\n    ]\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    name = models.CharField(max_length=200)\n    content = models.TextField()\n    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='hidden')",
+        "detail": "main.m183.models",
+        "documentation": {}
+    },
+    {
+        "label": "Comment",
+        "kind": 6,
+        "importPath": "main.m183.models",
+        "description": "main.m183.models",
+        "peekOfCode": "class Comment(models.Model):\n    content = models.TextField()\n    post = models.ForeignKey(Post, on_delete=models.CASCADE)\n    author = models.ForeignKey(User, on_delete=models.CASCADE)\n    created_at = models.DateTimeField(auto_now_add=True)\n    def __str__(self):\n        return self.content\nclass LoginAttempt(models.Model):\n    username = models.CharField(max_length=200)\n    timestamp = models.DateTimeField(auto_now_add=True)",
+        "detail": "main.m183.models",
+        "documentation": {}
+    },
+    {
+        "label": "LoginAttempt",
+        "kind": 6,
+        "importPath": "main.m183.models",
+        "description": "main.m183.models",
+        "peekOfCode": "class LoginAttempt(models.Model):\n    username = models.CharField(max_length=200)\n    timestamp = models.DateTimeField(auto_now_add=True)\n    sms_code = models.CharField(max_length=6, null=True, blank=True)\n    code_expires = models.DateTimeField(null=True, blank=True)\n    def __str__(self):\n        return f\"{self.username} at {self.timestamp}\"\n    @classmethod\n    def has_exceeded_limit(cls, username):\n        five_minutes_ago = timezone.now() - timedelta(minutes=5)",
+        "detail": "main.m183.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "main.m183.urls",
+        "description": "main.m183.urls",
+        "peekOfCode": "urlpatterns = [\n    path(\"\", views.home, name=\"home\"),\n    path(\"dashboard/\", views.dashboard, name=\"dashboard\"),\n    path(\"post/<uuid:post_id>/\", views.post_detail, name=\"post_detail\"),    #Account management\n    path(\"login/\", views.login_view, name=\"login\"),\n    path(\"logout/\", auth_views.LogoutView.as_view(), name=\"logout\"),\n    path(\"register/\", views.register, name=\"register\"),\n    path(\"account/\", views.account_view, name=\"account\"),\n    path(\"account/edit/\", views.account_edit_view, name=\"account_edit\"),\n    path(",
+        "detail": "main.m183.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "main.m183.wsgi",
+        "description": "main.m183.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "main.m183.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "main.main.asgi",
+        "description": "main.main.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "main.main.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "main.main.settings",
+        "description": "main.main.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-=%pl###)g^b1bc5$w*bl9)b!x-lo*_g#xtvv#t$b7ul!et#nsf'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "main.main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "main.main.settings",
+        "description": "main.main.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-=%pl###)g^b1bc5$w*bl9)b!x-lo*_g#xtvv#t$b7ul!et#nsf'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "main.main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "main.main.settings",
+        "description": "main.main.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "main.main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "main.main.settings",
+        "description": "main.main.settings",
+        "peekOfCode": "ALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'm183',",
+        "detail": "main.main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "main.main.settings",
+        "description": "main.main.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'm183',\n]\nMIDDLEWARE = [",
+        "detail": "main.main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "main.main.settings",
+        "description": "main.main.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'main.urls'",
+        "detail": "main.main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "main.main.settings",
+        "description": "main.main.settings",
+        "peekOfCode": "ROOT_URLCONF = 'main.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "main.main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "main.main.settings",
+        "description": "main.main.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "main.main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "main.main.settings",
+        "description": "main.main.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'main.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "main.main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "main.main.settings",
+        "description": "main.main.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    # {",
+        "detail": "main.main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "main.main.settings",
+        "description": "main.main.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    # {\n    #     'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    # },\n    # {\n    #     'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    # },\n    # {\n    #     'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    # },",
+        "detail": "main.main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "main.main.settings",
+        "description": "main.main.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = '/static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "detail": "main.main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "main.main.settings",
+        "description": "main.main.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = '/static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# Default primary key field type",
+        "detail": "main.main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "main.main.settings",
+        "description": "main.main.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = '/static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field",
+        "detail": "main.main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "main.main.settings",
+        "description": "main.main.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = '/static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "main.main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "main.main.settings",
+        "description": "main.main.settings",
+        "peekOfCode": "STATIC_URL = '/static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nLOGIN_URL = 'login'\nLOGOUT_URL = 'logout'\nLOGIN_REDIRECT_URL = 'dashboard'",
+        "detail": "main.main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_ROOT",
+        "kind": 5,
+        "importPath": "main.main.settings",
+        "description": "main.main.settings",
+        "peekOfCode": "STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nLOGIN_URL = 'login'\nLOGOUT_URL = 'logout'\nLOGIN_REDIRECT_URL = 'dashboard'\nLOGOUT_REDIRECT_URL = 'login'",
+        "detail": "main.main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_URL",
+        "kind": 5,
+        "importPath": "main.main.settings",
+        "description": "main.main.settings",
+        "peekOfCode": "MEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nLOGIN_URL = 'login'\nLOGOUT_URL = 'logout'\nLOGIN_REDIRECT_URL = 'dashboard'\nLOGOUT_REDIRECT_URL = 'login'\nLOGGING = {",
+        "detail": "main.main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_ROOT",
+        "kind": 5,
+        "importPath": "main.main.settings",
+        "description": "main.main.settings",
+        "peekOfCode": "MEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nLOGIN_URL = 'login'\nLOGOUT_URL = 'logout'\nLOGIN_REDIRECT_URL = 'dashboard'\nLOGOUT_REDIRECT_URL = 'login'\nLOGGING = {\n    'version': 1,",
+        "detail": "main.main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "main.main.settings",
+        "description": "main.main.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nLOGIN_URL = 'login'\nLOGOUT_URL = 'logout'\nLOGIN_REDIRECT_URL = 'dashboard'\nLOGOUT_REDIRECT_URL = 'login'\nLOGGING = {\n    'version': 1,\n    'disable_existing_loggers': False,\n    'handlers': {\n        'file': {",
+        "detail": "main.main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGIN_URL",
+        "kind": 5,
+        "importPath": "main.main.settings",
+        "description": "main.main.settings",
+        "peekOfCode": "LOGIN_URL = 'login'\nLOGOUT_URL = 'logout'\nLOGIN_REDIRECT_URL = 'dashboard'\nLOGOUT_REDIRECT_URL = 'login'\nLOGGING = {\n    'version': 1,\n    'disable_existing_loggers': False,\n    'handlers': {\n        'file': {\n            'level': 'DEBUG',",
+        "detail": "main.main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGOUT_URL",
+        "kind": 5,
+        "importPath": "main.main.settings",
+        "description": "main.main.settings",
+        "peekOfCode": "LOGOUT_URL = 'logout'\nLOGIN_REDIRECT_URL = 'dashboard'\nLOGOUT_REDIRECT_URL = 'login'\nLOGGING = {\n    'version': 1,\n    'disable_existing_loggers': False,\n    'handlers': {\n        'file': {\n            'level': 'DEBUG',\n            'class': 'logging.FileHandler',",
+        "detail": "main.main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGIN_REDIRECT_URL",
+        "kind": 5,
+        "importPath": "main.main.settings",
+        "description": "main.main.settings",
+        "peekOfCode": "LOGIN_REDIRECT_URL = 'dashboard'\nLOGOUT_REDIRECT_URL = 'login'\nLOGGING = {\n    'version': 1,\n    'disable_existing_loggers': False,\n    'handlers': {\n        'file': {\n            'level': 'DEBUG',\n            'class': 'logging.FileHandler',\n            'filename': 'general.log',",
+        "detail": "main.main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGOUT_REDIRECT_URL",
+        "kind": 5,
+        "importPath": "main.main.settings",
+        "description": "main.main.settings",
+        "peekOfCode": "LOGOUT_REDIRECT_URL = 'login'\nLOGGING = {\n    'version': 1,\n    'disable_existing_loggers': False,\n    'handlers': {\n        'file': {\n            'level': 'DEBUG',\n            'class': 'logging.FileHandler',\n            'filename': 'general.log',\n        },",
+        "detail": "main.main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGGING",
+        "kind": 5,
+        "importPath": "main.main.settings",
+        "description": "main.main.settings",
+        "peekOfCode": "LOGGING = {\n    'version': 1,\n    'disable_existing_loggers': False,\n    'handlers': {\n        'file': {\n            'level': 'DEBUG',\n            'class': 'logging.FileHandler',\n            'filename': 'general.log',\n        },\n    },",
+        "detail": "main.main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "main.main.urls",
+        "description": "main.main.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('m183.urls')),\n]\nif settings.DEBUG:\n    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)\n    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
+        "detail": "main.main.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "main.main.wsgi",
+        "description": "main.main.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "main.main.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "main.manage",
+        "description": "main.manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'main.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "main.manage",
+        "documentation": {}
+    }
+]

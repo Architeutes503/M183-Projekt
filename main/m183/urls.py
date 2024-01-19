@@ -17,4 +17,5 @@ urlpatterns = [
         "account/change_password/", views.password_change_view, name="password_change"
     ),
     path("api/posts/", views.api_view, name="api"),
+    path("enter_sms_code/", views.enter_sms_code_view, name="enter_sms_code"),
 ]

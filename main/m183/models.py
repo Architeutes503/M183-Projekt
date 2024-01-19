@@ -5,6 +5,15 @@ from datetime import timedelta
 import uuid
 
 
+
+class Profile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    phone_number = models.CharField(max_length=20, default='0000000000', blank=False)
+
+    def __str__(self):
+        return self.user.username
+    
+
 class Post(models.Model):
     STATUS_CHOICES = [
         ('hidden', 'Hidden'),
@@ -35,6 +44,8 @@ class Comment(models.Model):
 class LoginAttempt(models.Model):
     username = models.CharField(max_length=200)
     timestamp = models.DateTimeField(auto_now_add=True)
+    sms_code = models.CharField(max_length=6, null=True, blank=True)
+    code_expires = models.DateTimeField(null=True, blank=True)
 
     def __str__(self):
         return f"{self.username} at {self.timestamp}"

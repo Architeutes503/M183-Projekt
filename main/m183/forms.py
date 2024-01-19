@@ -5,9 +5,19 @@ from django.contrib.auth.forms import (
     PasswordChangeForm,
     UserChangeForm,
 )
-from django.contrib.auth.models import User
+from .models import Profile, Comment, User
 from .models import Comment
 
+
+
+
+
+class ProfileForm(forms.ModelForm):
+    phone_number = forms.CharField(required=True, max_length=15, widget=forms.TextInput(attrs={"class": "custom-input"}))
+
+    class Meta:
+        model = Profile
+        fields = ['phone_number']
 
 
 class CustomUserCreationForm(UserCreationForm):
@@ -31,6 +41,15 @@ class CustomUserCreationForm(UserCreationForm):
         self.fields["password2"].label = "Confirm Password"
         for field in self.fields.values():
             field.widget.attrs.update({"class": "custom-input"})
+        self.profile_form = ProfileForm(*args, **(kwargs.get('instance') or {}))
+
+    def save(self, commit=True):
+        user = super().save(commit=commit)
+        profile = self.profile_form.save(commit=False)
+        profile.user = user
+        if commit:
+            profile.save()
+        return user
 
 
 class CustomAuthenticationForm(AuthenticationForm):
@@ -73,3 +92,11 @@ class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
         fields = ["content"]
+        
+        
+class SMSCodeForm(forms.Form):
+    code = forms.CharField(max_length=6, required=True)
+
+    def clean_code(self):
+        code = self.cleaned_data['code']
+        return code

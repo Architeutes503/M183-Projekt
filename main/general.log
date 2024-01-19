@@ -48,3 +48,209 @@ C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\posts.py 
 Watching for file changes with StatReloader
 C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\posts.py changed, reloading.
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+User test has successfully logged in.
+User root has successfully logged in.
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py", line 40, in register
+    form = CustomUserCreationForm()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\forms.py", line 44, in __init__
+    self.profile_form = ProfileForm(*args, **kwargs.get('instance'))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: m183.forms.ProfileForm() argument after ** must be a mapping, not NoneType
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\forms.py changed, reloading.
+Watching for file changes with StatReloader
+User test2 has successfully registered.
+User root has successfully logged in.
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+User root has successfully updated their account.
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /.env
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): m183.gibz-informatik.ch:443
+https://m183.gibz-informatik.ch:443 "POST /api/sms/message HTTP/1.1" 400 None
+Starting new HTTPS connection (1): m183.gibz-informatik.ch:443
+https://m183.gibz-informatik.ch:443 "POST /api/sms/message HTTP/1.1" 400 None
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): m183.gibz-informatik.ch:443
+https://m183.gibz-informatik.ch:443 "POST /api/sms/message HTTP/1.1" 400 None
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): m183.gibz-informatik.ch:443
+https://m183.gibz-informatik.ch:443 "POST /api/sms/message HTTP/1.1" 400 None
+Starting new HTTPS connection (1): m183.gibz-informatik.ch:443
+https://m183.gibz-informatik.ch:443 "POST /api/sms/message HTTP/1.1" 400 None
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): m183.gibz-informatik.ch:443
+https://m183.gibz-informatik.ch:443 "POST /api/sms/message HTTP/1.1" 400 None
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): m183.gibz-informatik.ch:443
+https://m183.gibz-informatik.ch:443 "POST /api/sms/message HTTP/1.1" 400 None
+Starting new HTTPS connection (1): m183.gibz-informatik.ch:443
+https://m183.gibz-informatik.ch:443 "POST /api/sms/message HTTP/1.1" 204 0
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): m183.gibz-informatik.ch:443
+https://m183.gibz-informatik.ch:443 "POST /api/sms/message HTTP/1.1" 204 0
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): m183.gibz-informatik.ch:443
+https://m183.gibz-informatik.ch:443 "POST /api/sms/message HTTP/1.1" 204 0
+An error occurred while logging in.
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): m183.gibz-informatik.ch:443
+https://m183.gibz-informatik.ch:443 "POST /api/sms/message HTTP/1.1" 204 0
+An error occurred while logging in.
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+Not Found: /http:/api.ipify.org/
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): m183.gibz-informatik.ch:443
+https://m183.gibz-informatik.ch:443 "POST /api/sms/message HTTP/1.1" 204 0
+Not Found: /www.shadowserver.org:443
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): m183.gibz-informatik.ch:443
+https://m183.gibz-informatik.ch:443 "POST /api/sms/message HTTP/1.1" 204 0
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): m183.gibz-informatik.ch:443
+https://m183.gibz-informatik.ch:443 "POST /api/sms/message HTTP/1.1" 204 0
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): m183.gibz-informatik.ch:443
+https://m183.gibz-informatik.ch:443 "POST /api/sms/message HTTP/1.1" 204 0
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): m183.gibz-informatik.ch:443
+https://m183.gibz-informatik.ch:443 "POST /api/sms/message HTTP/1.1" 204 0
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): m183.gibz-informatik.ch:443
+https://m183.gibz-informatik.ch:443 "POST /api/sms/message HTTP/1.1" 204 0
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): m183.gibz-informatik.ch:443
+https://m183.gibz-informatik.ch:443 "POST /api/sms/message HTTP/1.1" 204 0
+Internal Server Error: /enter_sms_code/
+Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py", line 187, in enter_sms_code_view
+    attempt.code_expires = datetime.datetime(year=2001, month=1, day=1)
+                           ^^^^^^^^^^^^^^^^^
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+Forbidden (CSRF token from POST incorrect.): /enter_sms_code/
+Starting new HTTPS connection (1): m183.gibz-informatik.ch:443
+https://m183.gibz-informatik.ch:443 "POST /api/sms/message HTTP/1.1" 204 0
+Starting new HTTPS connection (1): m183.gibz-informatik.ch:443
+https://m183.gibz-informatik.ch:443 "POST /api/sms/message HTTP/1.1" 204 0

@@ -1,0 +1,16 @@
+<!-- main/m183/templates/account_management/enter_sms_code.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<div>
+  <h2>Enter SMS Code</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="hidden" name="username" value="{{ request.session.username }}">
+    <div>
+      <button type="submit">Submit Code</button>
+    </div>
+  </form>
+</div>
+{% endblock content %}
