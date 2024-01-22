@@ -46,6 +46,7 @@ class LoginAttempt(models.Model):
     timestamp = models.DateTimeField(auto_now_add=True)
     sms_code = models.CharField(max_length=6, null=True, blank=True)
     code_expires = models.DateTimeField(null=True, blank=True)
+    failed = models.BooleanField(default=False)
 
     def __str__(self):
         return f"{self.username} at {self.timestamp}"
@@ -53,5 +54,5 @@ class LoginAttempt(models.Model):
     @classmethod
     def has_exceeded_limit(cls, username):
         five_minutes_ago = timezone.now() - timedelta(minutes=5)
-        attempts = cls.objects.filter(username=username, timestamp__gte=five_minutes_ago).count()
-        return attempts >= 3
+        failed_attempts = cls.objects.filter(username=username, timestamp__gte=five_minutes_ago, failed=True).count()
+        return failed_attempts >= 3

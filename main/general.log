@@ -299,3 +299,42 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'post_detail' with keyword ar
 C:\Users\Administrator\Documents\Projects\M183-Projekt\main\m183\views\posts.py changed, reloading.
 Watching for file changes with StatReloader
 Comment created: asdfasfd by user: test
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+User not authenticated: AnonymousUser
+Starting new HTTPS connection (1): m183.gibz-informatik.ch:443
+https://m183.gibz-informatik.ch:443 "POST /api/sms/message HTTP/1.1" 204 0
+Post status changed: asdfasdfasdfasdf by user: test
+Post status changed: asdfasdfasdfasdf by user: test
+Post status changed: :) by user: test
+Post status changed: :) by user: test
+User: test tried to access Post: :) which is not found or not accessible.
+Comment created: :) by user: test
+Starting new HTTPS connection (1): m183.gibz-informatik.ch:443
+https://m183.gibz-informatik.ch:443 "POST /api/sms/message HTTP/1.1" 204 0
+C:\Users\Archi\Documents\M183-Projekt\main\m183\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Archi\Documents\M183-Projekt\main\m183\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Archi\Documents\M183-Projekt\main\m183\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Archi\Documents\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Archi\Documents\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Archi\Documents\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Archi\Documents\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Archi\Documents\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Archi\Documents\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Archi\Documents\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Archi\Documents\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Archi\Documents\M183-Projekt\main\m183\views\general.py changed, reloading.
+Watching for file changes with StatReloader

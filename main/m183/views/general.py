@@ -83,14 +83,15 @@ def login_view(request):
                         LoginAttempt.objects.create(
                             username=username,
                             sms_code=sms_code,
-                            code_expires=timezone.now() + timedelta(minutes=5)
+                            code_expires=timezone.now() + timedelta(minutes=5),
+                            failed=False
                         )
                         return redirect("enter_sms_code")
                     else:
                         messages.error(request, "Failed to send SMS code.")
                         return redirect("login")
                 else:
-                    LoginAttempt.objects.create(username=username, timestamp=timezone.now())
+                    LoginAttempt.objects.create(username=username, timestamp=timezone.now(), failed=True)
             else:
                 logger.info("User {} does not exist.".format(username))
                 messages.warning(request, "No user with that username exists.")
